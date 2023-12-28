@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es5",
+        "outDir": "./dist/",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "skipLibCheck": false,
+        "jsx": "react-jsx",
+        "baseUrl": "./",
+        "paths": {
+            "@demo/*": ["demo/*"]
+        }
+    },
+    // "include": ["src"],
+    "include": [
+        "src",
+        "types",
+        "src/global.d.ts",
+        "src/material-ui.d.ts",
+        "demo",
+        "shared.type.ts"
+    ], // tsc, ts -> js 대상 경로 (tsc 컴파일 할 파일의 위치)
+    "exclude": ["node_modules"]
+    // "ts-node": {
+    //   "compilerOptions": {
+    //     "module": "CommonJS"
+    //   }
+    // },
+}
